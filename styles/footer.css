@@ -1,0 +1,14 @@
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 30px auto;
+
+}
+.footerInfo {
+	margin: 0 20px;
+}
+
+.githubLogo {
+	width: 40px;
+}

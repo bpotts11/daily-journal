@@ -1,7 +1,13 @@
+@import "./header.css";
+@import "./article.css";
+@import "./aside.css";
+@import "./footer.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
 /*Typography
 --------------------------------------------------------------*/
+
+
 body,
 button,
 input,
@@ -18,8 +24,19 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
 
-form {
+main {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+
+body {
+	height: 100%;
+	margin: 0;
 }
