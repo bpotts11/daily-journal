@@ -1,0 +1,47 @@
+article {
+	flex-basis: 70%;
+	border: 2px solid red;
+}
+
+.date {
+	flex-basis: 28%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.concept {
+	flex-basis: 38%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.mood {
+	flex-basis: 18%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.textArea {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 95%;
+	margin: 30px o;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+textarea {
+	width: 95%;
+	align-self: center;
+}
+
+form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+form > div > label {
+	display: block;
+}

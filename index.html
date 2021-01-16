@@ -9,42 +9,49 @@
 
 <body>
     <header>
-        <img class="logo" src="" alt="">
+        <img class="logo" src="./images/bp-dj-logo.png" alt="logo of girl thinking about computer">
         <h1>Brittney's Daily Journal</h1>
     </header>
     <main>
         <article class="journalForm">
             <h2>Daily Journal</h2>
             <form action="">
-
-                <label for="date">Date of entry</label>
-                <input type="date" id="date">
-
-                <label for="concept"> Concepts covered</label>
-                <input type="text" id="concept">
-
-                <label for="entry">Journal Entry</label>
-                <textarea id="entry"></textarea>
-
-                <label for="mood">Mood for the day</label>
-                <select name="mood" id="mood">
-                    <option value="happy">😃</option>
-                    <option value="sad">😞</option>
-                    <option value="angry">😡</option>
-                    <option value="tired">😴</option>
-                    <option value="indifferent">😐</option>
-                </select>
+                <div class="date">
+                    <label for="date">Date of entry</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="concept">
+                    <label for="concept"> Concepts covered</label>
+                    <input type="text" id="concept">
+                </div>
+                <div class="mood">
+                    <label for="mood">Mood</label>
+                    <select name="mood" id="mood">
+                        <option value="happy">😃</option>
+                        <option value="sad">😞</option>
+                        <option value="angry">😡</option>
+                        <option value="tired">😴</option>
+                        <option value="indifferent">😐</option>
+                    </select>
+                </div>
+                <div class="textArea">
+                    <label for="entry">Journal Entry</label>
+                    <textarea id="entry"></textarea>
+                </div>
 
                 <button type="button">Record Journal Entry</button>
 
             </form>
         </article>
 
-        <aside></aside>
+        <aside>
+            <h2>Journal Entries</h2>
+        </aside>
 
     </main>
     <footer>
-        <p></p>
+        <p class="footerInfo">Brittney Potts ©</p> <a class="footerInfo" href="https://github.com/bpotts11">
+            <img class="githubLogo" src="./images/GitHub_Logo.png" alt="GitHub_Logo"></a>
     </footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
