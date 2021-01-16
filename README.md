@@ -1,0 +1,1 @@
+![](images/daily-journal.png)

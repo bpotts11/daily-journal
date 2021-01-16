@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="" alt="">
+        <h1>Brittney's Daily Journal</h1>
+    </header>
+    <main>
+        <article class="journalForm">
+            <h2>Daily Journal</h2>
+            <form action="">
+
+                <label for="date">Date of entry</label>
+                <input type="date" id="date">
+
+                <label for="concept"> Concepts covered</label>
+                <input type="text" id="concept">
+
+                <label for="entry">Journal Entry</label>
+                <textarea id="entry"></textarea>
+
+                <label for="mood">Mood for the day</label>
+                <select name="mood" id="mood">
+                    <option value="happy">😃</option>
+                    <option value="sad">😞</option>
+                    <option value="angry">😡</option>
+                    <option value="tired">😴</option>
+                    <option value="indifferent">😐</option>
+                </select>
+
+                <button type="button">Record Journal Entry</button>
+
+            </form>
+        </article>
+
+        <aside></aside>
+
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
