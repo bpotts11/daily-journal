@@ -1,0 +1,83 @@
+article {
+	flex-basis: 70%;
+	border: 1px solid #fffafa25;
+	border-radius: 5%;
+	margin-right: 15px;
+}
+
+aside {
+	flex-basis: 25%;
+	border: 1px solid #fffafa25;
+	border-radius: 5%;
+	margin-left: 15px;
+}
+
+article, aside{
+	height: 72vh;
+	background-color: #fffafa25;
+	box-shadow: 1px 1px #404040;
+	flex-shrink: inherit;
+}
+
+.date {
+	flex-basis: 28%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.concept {
+	flex-basis: 38%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.mood {
+	flex-basis: 18%;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+.textArea {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 95%;
+	margin-top: 30px;
+	padding: 10px;
+	/* border: 1px solid teal; */
+}
+
+textarea {
+	width: 95%;
+	align-self: center;
+	height: 35vh;
+}
+
+form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+form > div > label {
+	display: block;
+}
+
+label{
+	margin-bottom: 5px;
+	font-size: 1.20em;
+	text-shadow: 2px 2px #ffffffbd;
+	font-weight: bold;
+}
+
+button{
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
+.background{
+	background-color: #ffffffbd ;
+	border: 1px solid #ffffffbd;
+	box-shadow: 1px 1px #404040;
+	border-radius: 25px;
+}
