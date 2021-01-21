@@ -1,6 +1,5 @@
 @import "./header.css";
-@import "./article.css";
-@import "./aside.css";
+@import "./article-aside.css";
 @import "./footer.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
@@ -27,16 +26,16 @@ h1,h2,h3,h4,h5,h6 {
 h2 {
 	font-size: 2em;
 	text-align: center;
+	text-shadow: 2px 2px #ffffffbd;
 }
 
 main {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
-	border: 2px solid black;
 }
 
 body {
-	height: 100%;
 	margin: 0;
+	background-color: #d8d64b;
 }
