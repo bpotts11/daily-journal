@@ -41,3 +41,4 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}

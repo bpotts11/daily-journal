@@ -81,3 +81,11 @@ button{
 	box-shadow: 1px 1px #404040;
 	border-radius: 25px;
 }
+
+.journalEntry{
+	margin: 20px 0;
+}
+
+.entryMargin{
+	margin: 1px 0;
+}
