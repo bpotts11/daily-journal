@@ -45,12 +45,12 @@ textarea {
 	align-self: center;
 	height: 35vh;
 }
-form {
+.entryForm {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
-form > div > label {
+.entryForm > div > label {
 	display: block;
 }
 

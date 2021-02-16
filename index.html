@@ -15,33 +15,7 @@
     <main>
         <article class="journalForm">
             <h2>Daily Journal</h2>
-            <form action="">
-                <div class="date">
-                    <label for="date">Date of entry</label>
-                    <input class="background" type="date" id="date">
-                </div>
-                <div class="concept">
-                    <label for="concept"> Concepts covered</label>
-                    <input class="background" type="text" id="concept">
-                </div>
-                <div class="mood">
-                    <label for="mood">Mood</label>
-                    <select class="background" name="mood" id="mood">
-                        <option value="happy">😃</option>
-                        <option value="sad">😞</option>
-                        <option value="angry">😡</option>
-                        <option value="tired">😴</option>
-                        <option value="indifferent">😐</option>
-                    </select>
-                </div>
-                <div class="textArea">
-                    <label for="entry">Journal Entry</label>
-                    <textarea class="background" id="entry"></textarea>
-                </div>
-
-                <button class="background" type="button">Record Journal Entry</button>
-
-            </form>
+            <section class="entryForm"></section>
         </article>
 
         <aside id="entryLog">
@@ -50,8 +24,10 @@
 
     </main>
     <footer>
-        <p class="footerInfo">Brittney Potts ©</p> <a class="footerInfo" href="https://github.com/bpotts11">
-            <img class="githubLogo" src="./images/GitHub_Logo.png" alt="GitHub_Logo"></a>
+        <p class="footerInfo">Brittney Potts ©</p>
+        <a class="footerInfo" href="https://github.com/bpotts11" target="_blank">
+            <img class="githubLogo" src="./images/GitHub_Logo.png" alt="GitHub_Logo">
+        </a>
     </footer>
     <script type="module" src="./scripts/main.js"></script>
 </body>
