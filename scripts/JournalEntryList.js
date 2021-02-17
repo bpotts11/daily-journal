@@ -1,3 +1,4 @@
+const eventHub = document.querySelector(".container")
 /*
  *  Purpose:
  *    To render as many journal entry components as
@@ -23,10 +24,14 @@ const render = (entryArray) => {
     `
 }
 
-export const entyList = () => {
+export const entryList = () => {
     getEntries()
         .then(() => {
             const allEntries = useEntries()
             render(allEntries)
         })
 }
+
+eventHub.addEventListener("journalStateChanged", event => {
+    entryList()
+})
