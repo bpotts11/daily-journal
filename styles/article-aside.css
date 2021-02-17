@@ -44,6 +44,7 @@ textarea {
 	width: 95%;
 	align-self: center;
 	height: 35vh;
+	padding: 10px;
 }
 .entryForm {
 	display: flex;

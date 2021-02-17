@@ -1,46 +1,123 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "07/24/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Ok"
-        },
-        {
-            "id": 2,
-            "date": "07/25/2025",
-            "concept": "Flexbox",
-            "entry": "We talked about Flexbox components. I was able to use it to create two sections side by side.",
-            "mood": "Happy"
-        },
-        {
-            "id": 3,
-            "date": "07/26/2025",
-            "concept": "JavaScript",
-            "entry": "We talked about JavaScript. It is a lot to take in. I need to spend more time learning functions",
-            "mood": "sad"
-        },
-        {
-            "id": 4,
-            "date": "07/27/2025",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Ok"
-        },
-        {
-            "id": 5,
-            "date": "07/28/2025",
-            "concept": "Flexbox",
-            "entry": "We talked about Flexbox components. I was able to use it to create two sections side by side.",
-            "mood": "Happy"
-        },
-        {
-            "id": 6,
-            "date": "07/29/2025",
-            "concept": "JavaScript",
-            "entry": "We talked about JavaScript. It is a lot to take in. I need to spend more time learning functions",
-            "mood": "sad"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/24/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Ok"
+    },
+    {
+      "id": 2,
+      "date": "07/25/2025",
+      "concept": "Flexbox",
+      "entry": "We talked about Flexbox components. I was able to use it to create two sections side by side.",
+      "mood": "Happy"
+    },
+    {
+      "id": 3,
+      "date": "07/26/2025",
+      "concept": "JavaScript",
+      "entry": "We talked about JavaScript. It is a lot to take in. I need to spend more time learning functions",
+      "mood": "sad"
+    },
+    {
+      "id": 4,
+      "date": "07/27/2025",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Ok"
+    },
+    {
+      "id": 5,
+      "date": "07/28/2025",
+      "concept": "Flexbox",
+      "entry": "We talked about Flexbox components. I was able to use it to create two sections side by side.",
+      "mood": "Happy"
+    },
+    {
+      "id": 6,
+      "date": "07/29/2025",
+      "concept": "JavaScript",
+      "entry": "We talked about JavaScript. It is a lot to take in. I need to spend more time learning functions",
+      "mood": "sad"
+    },
+    {
+      "concept": "HTML",
+      "entry": "AHHHHH",
+      "mood": "happy",
+      "date": "2021-02-17",
+      "id": 7
+    },
+    {
+      "concept": "HTML",
+      "entry": "AHHHHH",
+      "mood": "happy",
+      "date": "2021-02-17",
+      "id": 8
+    },
+    {
+      "concept": "Java",
+      "entry": "AHHHHH",
+      "mood": "happy",
+      "date": "2021-02-17",
+      "id": 9
+    },
+    {
+      "concept": "CSS",
+      "entry": "AHHHHH",
+      "mood": "angry",
+      "date": "2021-02-18",
+      "id": 10
+    },
+    {
+      "concept": "HTML",
+      "entry": "AHHHH\n",
+      "mood": "sad",
+      "date": "2021-02-18",
+      "id": 11
+    },
+    {
+      "concept": "",
+      "entry": "Bitch",
+      "mood": "happy",
+      "date": "",
+      "id": 12
+    },
+    {
+      "concept": "",
+      "entry": "bitch",
+      "mood": "happy",
+      "date": "",
+      "id": 13
+    },
+    {
+      "concept": "",
+      "entry": "bitch",
+      "mood": "happy",
+      "date": "",
+      "id": 14
+    },
+    {
+      "concept": "",
+      "entry": "bitch",
+      "mood": "happy",
+      "date": "",
+      "id": 15
+    },
+    {
+      "concept": "",
+      "entry": "bitch",
+      "mood": "happy",
+      "date": "",
+      "id": 16
+    },
+    {
+      "concept": "",
+      "entry": "shit",
+      "mood": "happy",
+      "date": "",
+      "id": 17
+    }
+  ]
 }
