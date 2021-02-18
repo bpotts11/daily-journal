@@ -18,19 +18,20 @@ article, aside{
 	height: 72vh;
 }
 .date {
-	flex-basis: 28%;
+	/* flex-basis: 28%; */
 	padding: 10px;
-	/* border: 1px solid teal; */
 }
 .concept {
-	flex-basis: 38%;
+	/* flex-basis: 38%; */
 	padding: 10px;
-	/* border: 1px solid teal; */
 }
 .mood {
-	flex-basis: 18%;
+	/* flex-basis: 18%; */
 	padding: 10px;
-	/* border: 1px solid teal; */
+}
+.instructor {
+	/* flex-basis: 18%; */
+	padding: 10px;
 }
 .textArea {
 	display: flex;
@@ -38,7 +39,6 @@ article, aside{
 	flex-basis: 95%;
 	margin-top: 30px;
 	padding: 10px;
-	/* border: 1px solid teal; */
 }
 textarea {
 	width: 95%;
@@ -73,10 +73,21 @@ button{
 }
 .journalEntry{
 	margin: 20px 0;
+	border-top: 1px solid #40404098;
+	border-bottom: 1px solid #40404098;
 }
 .entryMargin{
 	margin: 1px 0;
 }
 .savedEntryContainer{
 	padding: 0 10px;
+}
+#mood{
+	height: 25px;
+}
+#instructor{
+	height: 25px;
+}
+#concept{
+	width: 215px;
 }
