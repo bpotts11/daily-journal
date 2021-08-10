@@ -58,6 +58,15 @@ export const JournalFormComponent = () => {
     render()
 }
 
+eventHub.addEventListener("input", e => {
+    if (e.target.id === "concept") {
+        const entryLength = document.querySelector("#concept").value.length
+        if (entryLength > 25) {
+            alert("Too many characters for: Concepts Covered")
+        }
+    }
+})
+
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveEntry") {
         clickEvent.preventDefault()
@@ -70,7 +79,6 @@ eventHub.addEventListener("click", clickEvent => {
             "date": document.querySelector("#date").value,
         }
         document.querySelector(".entryForm").reset()
-
         saveJournalEntry(newJournalEntry)
     }
 })

@@ -1,28 +1,31 @@
 import { getEntries, useEntries } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
-const eventHub = document.querySelector(".container")
 const entryLog = document.querySelector("#entryLog")
+let entries = []
+
+export const entryList = () => {
+    getEntries()
+        .then(() => {
+            entries = useEntries()
+            render(entries)
+        })
+}
 
 const render = (entryArray) => {
-    const entriesConvertedToString = entryArray.map(entryObj => {
+    let entriesConvertedToString = entryArray.map(entryObj => {
         return JournalEntryComponent(entryObj)
     }).join("")
 
-    entryLog.innerHTML += `
+    entryLog.innerHTML = `
     <div class="savedEntryContainer">
+    <h2>Journal Entries</h2>
         ${entriesConvertedToString}
     </div>
     `
 }
 
-export const entryList = () => {
-    getEntries()
-        .then(() => {
-            const allEntries = useEntries()
-            render(allEntries)
-        })
-}
-eventHub.addEventListener("entryStateChanged", e => {
+const eventHub = document.querySelector(".container")
+eventHub.addEventListener("entryStateChanged", Event => {
     entryList()
 })

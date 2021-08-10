@@ -1,5 +1,3 @@
-const eventHub = document.querySelector(".container")
-
 let journal = []
 
 export const useEntries = () => journal.slice()
@@ -18,26 +16,18 @@ export const saveJournalEntry = (entry) => {
         },
         body: JSON.stringify(entry)
     })
-        .then(response => response.json())  // Parse as JSON
-        .then(parsedEntries => journal = parsedEntries)
-        // .then(() => getEntries())  // <-- Get all journal entries
+        .then(getEntries)  // <-- Get all journal entries
         .then(dispatchStateChangeEvent)  // <-- Broadcast the state change event
 }
 
 export const deleteEntry = entryId => {
-    return fetch(`http://localhost:8088/entries/${entryId}?_expand=mood&_expand=instructor`, {
+    return fetch(`http://localhost:8088/entries/${entryId}`, {
         method: "DELETE"
     })
-        // .then(getEntries)
+        .then(getEntries)
         .then(dispatchStateChangeEvent)
 }
-
-// this is journalStateChanged on his
-export const dispatchStateChangeEvent = () => {
+const eventHub = document.querySelector(".container")
+const dispatchStateChangeEvent = () => {
     eventHub.dispatchEvent(new CustomEvent("entryStateChanged"))
 }
-
-// eventHub.addEventListener("deleteRequested", e => {
-//     const entryId = e.detail.entryId
-//     deleteJournalEntry(entryId)
-// })
