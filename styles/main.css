@@ -31,7 +31,7 @@ h2 {
 	font-size: 2em;
 	text-align: center;
 	text-shadow: 2px 2px #ffffffbd;
-	position: sticky;
+	/* position: sticky; */
 	top: 20px;
 }
 

@@ -1,14 +1,6 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "07/24/2025",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "moodId": 1,
-      "instructorId": 1
-    },
-    {
       "id": 2,
       "date": "07/25/2025",
       "concept": "Flexbox",
@@ -49,11 +41,11 @@
       "instructorId": 3
     },
     {
-      "concept": "ERD",
-      "entry": "ERD's are very important!",
+      "concept": "Delete Event",
+      "entry": "I am working on creating an Event Listener to listen for the delete button clicked so I can delete Journal Entries",
       "instructorId": 1,
       "moodId": 4,
-      "date": "2021-02-18",
+      "date": "2021-07-29",
       "id": 7
     }
   ],

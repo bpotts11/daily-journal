@@ -1,37 +1,31 @@
-const eventHub = document.querySelector(".container")
-/*
- *  Purpose:
- *    To render as many journal entry components as
- *    there are items in the collection exposed by the
- *    data provider component
- */
 import { getEntries, useEntries } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
-// DOM reference to where all entries will be rendered
 const entryLog = document.querySelector("#entryLog")
+let entries = []
 
-// I am importing from journal data provider to get the entries from the api so I can map them and turn them into strings so they can be impoted into the HTML rep from journal entry
+export const entryList = () => {
+    getEntries()
+        .then(() => {
+            entries = useEntries()
+            render(entries)
+        })
+}
+
 const render = (entryArray) => {
-    const entriesConvertedToString = entryArray.map(entryObj => {
+    let entriesConvertedToString = entryArray.map(entryObj => {
         return JournalEntryComponent(entryObj)
     }).join("")
 
-    entryLog.innerHTML += `
+    entryLog.innerHTML = `
     <div class="savedEntryContainer">
+    <h2>Journal Entries</h2>
         ${entriesConvertedToString}
     </div>
     `
 }
 
-export const entryList = () => {
-    getEntries()
-        .then(() => {
-            const allEntries = useEntries()
-            render(allEntries)
-        })
-}
-
-eventHub.addEventListener("journalStateChanged", event => {
+const eventHub = document.querySelector(".container")
+eventHub.addEventListener("entryStateChanged", Event => {
     entryList()
 })
