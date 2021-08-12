@@ -24,3 +24,10 @@ h1 {
 	align-self: center;
 	text-shadow: 3px 3px #ffffffbd;
 }
+
+fieldset {
+		background-color: #fffafa25 ;
+	border: 1px solid #fffafa25;
+	box-shadow: 1px 1px #404040;
+	border-radius: 10px;
+}

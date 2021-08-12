@@ -29,3 +29,18 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("entryStateChanged", Event => {
     entryList()
 })
+
+eventHub.addEventListener("moodChosen", Event => {
+    entries = useEntries()
+    entries = entries.filter(entry => entry.moodId === Event.detail.moodChosen)
+    render(entries)
+})
+
+
+
+
+// eventHub.addEventListener("moodChosen", Event => {
+//     entries = useJournalEntries()
+//     entries = entries.filter(entry => entry.moodId === Event.detail.moodChosen)
+//     render(entries)
+// })
